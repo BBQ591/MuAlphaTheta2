@@ -63,7 +63,7 @@ function App() {
         <img
           src={logo}
           style={{
-            width: "500px",
+            width: "400px",
           }}
         />
       </div>
