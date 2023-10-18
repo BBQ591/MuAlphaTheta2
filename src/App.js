@@ -32,7 +32,7 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: "url(" + require("./stars.webp") + ")",
+        backgroundImage: "url(" + require("./stars.png") + ")",
         backgroundPosition: "center",
         // backgroundSize: "cover",
         // backgroundRepeat: "no-repeat",
@@ -146,7 +146,7 @@ function App() {
               opacity: Brianhover ? 0.5 : 1,
               boxShadow: "1px 2px 9px black",
               fontSize: (window.innerWidth / window.innerHeight / 2.02463) * 30,
-              backgroundImage: "url(" + require("./Brian.jpeg") + ")",
+              backgroundImage: "url(" + require("./Brian.png") + ")",
               backgroundSize: "cover",
               color: "white",
               width: (300 * window.innerWidth) / 1319,
