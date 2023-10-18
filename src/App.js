@@ -7,7 +7,9 @@ import { Modal, Button } from "react-bootstrap";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import PosterSheet from "./PosterSheet.png";
 import ChalkSheet from "./ChalkSheet.png";
+// import { Textfit } from "react-textfit";
 function App() {
+  // Define a styled component with the Gagalin font
   const [Brianhover, setBrianHover] = useState(false);
   const [Elenahover, setElenaHover] = useState(false);
   const [Amyhover, setAmyHover] = useState(false);
@@ -32,8 +34,7 @@ function App() {
   return (
     <div
       style={{
-        backgroundImage: "url(" + require("./stars.png") + ")",
-        backgroundPosition: "center",
+        backgroundColor: "#5271FF",
         // backgroundSize: "cover",
         // backgroundRepeat: "no-repeat",
       }}
@@ -296,7 +297,7 @@ function App() {
               padding: 20,
             }}
           >
-            <h1 style={{ color: "white" }}>Location:</h1>
+            <h1 style={{ color: "white" }}>Location</h1>
             <p style={{ fontSize: 20, color: "white" }}>
               Oak Ridge High School: 1450 Oak Ridge High School Oak Ridge, TN
               37830. Please enter through the bus loop doors on Providence
@@ -316,7 +317,7 @@ function App() {
             textAlign: "center",
           }}
         >
-          <h1 style={{ color: "white" }}>Theme:</h1>
+          <h1 style={{ color: "white" }}>Theme</h1>
           <p style={{ fontSize: 20, color: "white" }}>Outer Space</p>
         </div>
       </div>
@@ -366,26 +367,79 @@ function App() {
             </Modal.Body>
           </Modal>
         </div>
-        <h1 style={{ color: "white" }}>Sections:</h1>
+        <h1 style={{ color: "white" }}>Sections</h1>
         <div style={{ flexDirection: "row", display: "flex" }}>
-          <button
+          <Button
             onClick={() => setMuClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              marginLeft: 5,
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
           >
             Mu
-          </button>
-          <button
+          </Button>
+          {/* <button
+            onClick={() => setMuClick(true)}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
+          >
+            Mu
+          </button> */}
+          <Button
             onClick={() => setAlphaClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
           >
             Alpha
-          </button>
-          <button
+          </Button>
+          {/* <button
+            onClick={() => setAlphaClick(true)}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
+          >
+            Alpha
+          </button> */}
+          <Button
             onClick={() => setThetaClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              marginRight: 5,
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
           >
             Theta
-          </button>
+          </Button>
+          {/* <button
+            onClick={() => setThetaClick(true)}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
+          >
+            Theta
+          </button> */}
         </div>
       </div>
       <div
@@ -644,66 +698,237 @@ function App() {
             </Modal.Body>
           </Modal>
         </div>
-        <h1 style={{ color: "white" }}>Tests:</h1>
+        <h1 style={{ color: "white" }}>Tests</h1>
         <div style={{ flexDirection: "row", display: "flex" }}>
-          <button
+          {/* <button
             onClick={() => setChalkTalkClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
           >
             Chalk Talk
-          </button>
-          <button
+          </button> */}
+          <Button
+            onClick={() => setChalkTalkClick(true)}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              marginLeft: 5,
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
+          >
+            Chalk Talk
+          </Button>
+          {/* <button
             onClick={() => setPosterClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
           >
             Poster
-          </button>
-          <button
+          </button> */}
+          <Button
+            onClick={() => setPosterClick(true)}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
+          >
+            Poster
+          </Button>
+          {/* <button
             onClick={() => setInterSchoolClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
           >
             Interschool Test
-          </button>
+          </button> */}
+          <Button
+            onClick={() => setInterSchoolClick(true)}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              marginRight: 5,
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
+          >
+            Interschool
+          </Button>
         </div>
-        <div style={{ flexDirection: "row", display: "flex" }}>
-          <button
+        <div
+          style={{
+            flexDirection: "row",
+            display: "flex",
+            height: window.innerWidth / 15,
+          }}
+        >
+          {/* <button
             onClick={() => setMentalClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
           >
             Mental Math
-          </button>
-          <button
+          </button> */}
+          <Button
+            onClick={() => setMentalClick(true)}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              marginLeft: 5,
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
+          >
+            Mental Math
+          </Button>
+          <Button
             onClick={() => setSpeedClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
           >
             Speed Math
-          </button>
-          <button
+          </Button>
+          {/* <button
+            onClick={() => setSpeedClick(true)}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
+          >
+            Speed Math
+          </button> */}
+          <Button
             onClick={() => setHistoryClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              marginRight: 5,
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
+          >
+            Math History
+          </Button>
+          {/* <button
+            onClick={() => setHistoryClick(true)}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
           >
             History of Math
-          </button>
+          </button> */}
         </div>
-        <div style={{ flexDirection: "row", display: "flex" }}>
-          <button
+        <div
+          style={{
+            flexDirection: "row",
+            display: "flex",
+            // backgroundColor: "#E6AA37",
+          }}
+        >
+          {/* <button
             onClick={() => setMathClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
           >
             Math Bowl
-          </button>
-          <button
+          </button> */}
+          <Button
+            onClick={() => setMathClick(true)}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              marginLeft: 5,
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
+          >
+            Math Bowl
+          </Button>
+          {/* <button
             onClick={() => setIndividualClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
           >
             Individual Test
-          </button>
-          <button
+          </button> */}
+          <Button
+            onClick={() => setIndividualClick(true)}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
+          >
+            Individual Test
+          </Button>
+          {/* <button
             onClick={() => setCipheringClick(true)}
-            style={{ fontSize: 20, color: "blue", flex: 1 }}
+            style={{
+              fontSize: 20,
+              color: "white",
+              flex: 1,
+              backgroundColor: "#E6AA37",
+            }}
           >
             Ciphering Test
-          </button>
+          </button> */}
+          <Button
+            onClick={() => setCipheringClick(true)}
+            style={{
+              flex: 1,
+              backgroundColor: "#E6AA37",
+              marginRight: 5,
+              height: window.innerWidth / 15,
+              fontSize: window.innerWidth / 35,
+              borderRadius: 15,
+            }}
+          >
+            Ciphering Test
+          </Button>
         </div>
       </div>
       <div style={{ padding: 20 }}>
@@ -719,7 +944,7 @@ function App() {
             padding: 20,
           }}
         >
-          <h1 style={{ color: "white" }}>Schedule</h1>
+          <h1 style={{ color: "white" }}>Tentative Schedule</h1>
           <p style={{ fontSize: 15, color: "white" }}>
             Friday, April 5th:
             <br /> ● 5:00-5:30 p.m. Check-In <br />● 5:30-6:30 p.m.
@@ -748,7 +973,7 @@ function App() {
             padding: 20,
           }}
         >
-          <h1 style={{ color: "white" }}>Running for State Office:</h1>
+          <h1 style={{ color: "white" }}>Running for State Office</h1>
           <p style={{ fontSize: 15, color: "white" }}>
             Each school may nominate candidates for the following positions –
             President, Vice President, Secretary, and Treasurer. All members who
