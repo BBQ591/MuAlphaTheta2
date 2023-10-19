@@ -239,7 +239,7 @@ function App() {
             onClick={() => setTrishitaClick(true)}
           ></button>
           {/* </div> */}
-          {/* <button
+          <button
             style={{
               borderRadius: 20,
               height: (300 * window.innerWidth) / 1319,
@@ -247,7 +247,7 @@ function App() {
               opacity: Elenahover ? 0.5 : 1,
               boxShadow: "1px 2px 9px black",
               fontSize: (window.innerWidth / window.innerHeight / 2.02463) * 30,
-              backgroundImage: "url(" + require("./Brian.jpeg") + ")",
+              backgroundImage: "url(" + require("./Elena.png") + ")",
               backgroundSize: "cover",
               color: "white",
               marginLeft: 30,
@@ -258,7 +258,7 @@ function App() {
             onMouseOver={() => setElenaHover(true)}
             onMouseOut={() => setElenaHover(false)}
             onClick={() => setElenaClick(true)}
-          ></button> */}
+          ></button>
           <button
             style={{
               borderRadius: 20,
@@ -298,10 +298,15 @@ function App() {
         <div className="container mt-3">
           <Modal show={ElenaClick}>
             <Modal.Header closeButton onClick={() => setElenaClick(false)}>
-              <Modal.Title>Elena Vogt</Modal.Title>
+              <Modal.Title>Treasurer: Elena Vogt</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              Elena likes reading, writing, math, and sleeping
+              Elena is the current Sophomore class president for her school. She
+              enjoys playing soccer and rowing. Outside of sports Elena is on
+              the high school robotics team and volunteers in the community. In
+              her free time, she loves reading, learning to code, and spending
+              time with her friends. <br />
+              Contact: Elena.k.vogt@icloud.com
             </Modal.Body>
           </Modal>
         </div>
