@@ -98,9 +98,10 @@ function App() {
           >
             <h1 style={{ color: "white" }}>Location</h1>
             <p style={{ fontSize: 20, color: "white" }}>
-              Oak Ridge High School: 1450 Oak Ridge High School Oak Ridge, TN
-              37830. Please enter through the bus loop doors on Providence
-              Avenue and we will begin in the Amphitheater.
+              Oak Ridge High School: 1450 Oak Ridge Turnpike, Oak Ridge, TN
+              37830.
+              <br /> Please enter through the bus loop doors on Providence
+              Avenue and the event will start in the Amphitheater.
             </p>
           </div>
         </div>
