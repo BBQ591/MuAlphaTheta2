@@ -119,8 +119,8 @@ function App() {
               textAlign: "center",
             }}
           >
-            <h1 style={{ color: "white" }}>Time</h1>
-            <p style={{ fontSize: 20, color: "white" }}>April 5-6</p>
+            <h1 style={{ color: "white" }}>Date</h1>
+            <p style={{ fontSize: 20, color: "white" }}>April 5-6, 2024</p>
           </div>
         </div>
       </div>
