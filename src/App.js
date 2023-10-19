@@ -68,6 +68,61 @@ function App() {
           }}
         />
       </div>
+      <div style={{ flexDirection: "row", display: "flex", padding: 20 }}>
+        <div style={{ paddingRight: 20 }}>
+          <div
+            style={{
+              flex: 1,
+              textAlign: "center",
+              borderRadius: 20,
+              boxShadow: "1px 2px 9px black",
+              padding: 20,
+              alignItems: "center",
+              alignContent: "center",
+              textAlign: "center",
+            }}
+          >
+            <h1 style={{ color: "white" }}>Theme</h1>
+            <p style={{ fontSize: 20, color: "white" }}>Outer Space</p>
+          </div>
+        </div>
+        <div style={{ paddingRight: 20, flex: 2 }}>
+          <div
+            style={{
+              flex: 1,
+              textAlign: "center",
+              borderRadius: 20,
+              boxShadow: "1px 2px 9px black",
+              padding: 20,
+            }}
+          >
+            <h1 style={{ color: "white" }}>Location</h1>
+            <p style={{ fontSize: 20, color: "white" }}>
+              Oak Ridge High School: 1450 Oak Ridge High School Oak Ridge, TN
+              37830. Please enter through the bus loop doors on Providence
+              Avenue and we will begin in the Amphitheater.
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div
+            style={{
+              flex: 1,
+              textAlign: "center",
+              borderRadius: 20,
+              boxShadow: "1px 2px 9px black",
+              padding: 20,
+              alignItems: "center",
+              alignContent: "center",
+              textAlign: "center",
+            }}
+          >
+            <h1 style={{ color: "white" }}>Time</h1>
+            <p style={{ fontSize: 20, color: "white" }}>April 5-6</p>
+          </div>
+        </div>
+      </div>
       <div style={{ padding: 20 }}>
         <div
           style={{
@@ -232,7 +287,8 @@ function App() {
             <Modal.Body>
               Brian loves to play soccer and is on the Tennessee Olympic
               Development Program 1st team. His other hobbies include lifting,
-              running, and coding. In fact, he coded this website as promised :)
+              running, and coding. In fact, he programmed this website as
+              promised :)
               <br />
               Contact: brianqu2013@gmail.com
             </Modal.Body>
@@ -284,41 +340,6 @@ function App() {
               Contact: trishitapaul06@gmail.com
             </Modal.Body>
           </Modal>
-        </div>
-      </div>
-      <div style={{ flexDirection: "row", display: "flex", padding: 20 }}>
-        <div style={{ paddingRight: 20 }}>
-          <div
-            style={{
-              flex: 1,
-              textAlign: "center",
-              borderRadius: 20,
-              boxShadow: "1px 2px 9px black",
-              padding: 20,
-            }}
-          >
-            <h1 style={{ color: "white" }}>Location</h1>
-            <p style={{ fontSize: 20, color: "white" }}>
-              Oak Ridge High School: 1450 Oak Ridge High School Oak Ridge, TN
-              37830. Please enter through the bus loop doors on Providence
-              Avenue and we will begin in the Amphitheater.
-            </p>
-          </div>
-        </div>
-        <div
-          style={{
-            flex: 1,
-            textAlign: "center",
-            borderRadius: 20,
-            boxShadow: "1px 2px 9px black",
-            padding: 20,
-            alignItems: "center",
-            alignContent: "center",
-            textAlign: "center",
-          }}
-        >
-          <h1 style={{ color: "white" }}>Theme</h1>
-          <p style={{ fontSize: 20, color: "white" }}>Outer Space</p>
         </div>
       </div>
 
